@@ -134,7 +134,7 @@ Replace the notebook filename above with your actual filename if needed.
 
 **Your Name**
 
-GitHub: https://github.com/YOUR-USERNAME
+GitHub: https://github.com/GuruprasadSunagar
 
 ## ⭐ Acknowledgment
 
