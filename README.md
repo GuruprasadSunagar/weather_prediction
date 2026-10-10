@@ -1,106 +1,143 @@
-# 🌦️ Seattle Weather Data Analysis
+# 🌦️ Seattle Weather Analysis and Prediction
 
 ## 📌 Project Overview
-This project focuses on analyzing Seattle weather data using Python. It explores weather conditions, temperature, precipitation, and wind speed to understand weather patterns through data analysis and visualization.
 
-This is a beginner-friendly Data Science project designed to practice data cleaning, data analysis, and chart creation.
+This project uses Python to analyze Seattle weather data and predict weather conditions using Machine Learning.
 
-## 🎯 Project Objectives
-- Analyze Seattle's daily weather data.
-- Understand different weather conditions.
-- Study maximum and minimum temperatures.
-- Analyze precipitation and wind speed.
-- Create charts to visualize weather patterns.
-- Practice Python libraries used in Data Science.
+The project explores weather information such as precipitation, maximum temperature, minimum temperature, wind speed, and weather conditions. It also uses different charts to visualize the data and a Decision Tree Classifier to predict weather categories.
+
+This project is created using Google Colab as part of my Data Science learning journey.
+
+## 🎯 Objectives
+
+- Analyze Seattle weather data using Python.
+- Explore temperature, precipitation, and wind speed.
+- Count different weather conditions.
+- Create charts to understand weather patterns.
+- Build a Machine Learning model to predict weather conditions.
+- Evaluate model performance using accuracy score.
 
 ## 📂 Dataset
-**Dataset:** `seattle-weather.csv`
 
-The dataset contains **1,461 records and 6 columns**, covering daily weather observations from 2012 to 2015.
+**Dataset name:** `seattle-weather.csv`
+
+The dataset contains the following columns:
 
 | Column | Description |
 |---|---|
-| `date` | Date of observation |
+| `date` | Date of weather observation |
 | `precipitation` | Amount of precipitation |
-| `temp_max` | Maximum temperature in °C |
-| `temp_min` | Minimum temperature in °C |
+| `temp_max` | Maximum temperature |
+| `temp_min` | Minimum temperature |
 | `wind` | Wind speed |
-| `weather` | Weather condition, such as rain, sun, snow, drizzle, or fog |
+| `weather` | Weather condition |
+
+Weather categories include rain, sun, drizzle, snow, and fog.
 
 ## 🛠️ Technologies Used
-- **Python** – Programming language
-- **Pandas** – Data analysis and manipulation
-- **NumPy** – Numerical calculations
-- **Matplotlib** – Data visualization
-- **Seaborn** – Statistical data visualization
-- **Google Colab / Jupyter Notebook** – Coding environment
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Google Colab
+- Jupyter Notebook
 
 ## 📊 Data Visualizations
-The project can include the following charts:
 
-1. **Weather Condition Count** – Number of days for each weather condition.
-2. **Pie Chart** – Percentage distribution of weather conditions.
-3. **Precipitation Analysis** – Rainfall and precipitation patterns.
-4. **Temperature Analysis** – Comparison of maximum and minimum temperatures.
-5. **Wind Speed Analysis** – Wind speed patterns over time.
-6. **Yearly Weather Analysis** – Comparison of weather patterns across years.
-7. **Weather Trend Analysis** – Changes in weather conditions over time.
+This project includes the following visualizations:
 
-## ⚙️ Installation and Setup
+1. **Bar Chart:** Displays the number of days for each weather condition.
+2. **Line Chart:** Compares maximum and minimum temperatures.
+3. **Wind Speed Chart:** Shows changes in wind speed.
+4. **Precipitation Chart:** Visualizes precipitation values.
+5. **Pie Chart:** Displays the percentage distribution of weather conditions.
+6. **Histogram:** Shows the distribution of maximum temperatures.
+7. **Scatter Plot:** Shows the relationship between maximum temperature and wind speed.
+8. **Heatmap:** Displays correlations between numerical weather features.
+9. **Weather Count Plot:** Visualizes the frequency of weather categories.
 
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/YOUR-USERNAME/seattle-weather-analysis.git
-```
+## 🤖 Machine Learning Model
 
-### Step 2: Open the Project Folder
-```bash
-cd seattle-weather-analysis
-```
+A **Decision Tree Classifier** is used to predict weather conditions.
 
-### Step 3: Install Required Libraries
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
+### Input Features
+- Precipitation
+- Maximum temperature
+- Minimum temperature
+- Wind speed
 
-### Step 4: Run the Project
-Open the Jupyter Notebook or upload the notebook to Google Colab.
+### Target Variable
+- Weather condition
 
-Make sure `seattle-weather.csv` is available in the correct location before running the code.
+### Model Workflow
+1. Load the weather dataset.
+2. Prepare input features and target variable.
+3. Split the data into training and testing sets.
+4. Train the Decision Tree Classifier.
+5. Predict weather conditions on the test data.
+6. Calculate the model's accuracy score.
+
+The dataset is split using an 80% training set and a 20% testing set.
+
+## ⚙️ How to Run the Project
+
+### Step 1: Download the Project
+Download the Jupyter Notebook and `seattle-weather.csv` dataset.
+
+### Step 2: Open Google Colab
+Visit [Google Colab](https://colab.research.google.com/).
+
+### Step 3: Upload the Notebook
+Upload the `.ipynb` file to Google Colab.
+
+### Step 4: Upload the Dataset
+Run the notebook's file-upload cell and select `seattle-weather.csv`.
+
+### Step 5: Run the Code
+Run the notebook cells in order to perform data analysis, generate visualizations, train the model, and evaluate its accuracy.
 
 ## 📁 Project Structure
+
 ```text
-seattle-weather-analysis/
+Seattle-Weather-Analysis/
 │
-├── seattle-weather.csv
 ├── Seattle_Weather_Analysis.ipynb
+├── seattle-weather.csv
 └── README.md
 ```
 
-*Note: Replace `Seattle_Weather_Analysis.ipynb` with your actual notebook filename if it is different.*
+Replace the notebook filename above with your actual filename if needed.
 
-## 🔍 Key Learnings
-- Loading datasets using Pandas.
-- Understanding rows, columns, and data types.
-- Cleaning and exploring data.
-- Using NumPy for numerical operations.
-- Creating bar charts, pie charts, and line graphs.
-- Understanding weather patterns using visualizations.
-- Developing practical Data Science project skills.
+## 📚 Key Learnings
+
+- Reading CSV files using Pandas.
+- Exploring datasets and selecting columns.
+- Checking and handling missing values.
+- Analyzing weather conditions.
+- Creating different types of data visualizations.
+- Splitting data into training and testing sets.
+- Training a Decision Tree Classifier.
+- Making predictions and evaluating model accuracy.
 
 ## 🚀 Future Improvements
-- Build a machine learning model to predict weather conditions.
-- Develop a weather dashboard using Streamlit.
-- Perform more detailed seasonal analysis.
-- Add interactive charts and filters.
+
+- Improve prediction accuracy through model tuning.
+- Compare Decision Tree with other classification algorithms.
+- Create an interactive weather analysis dashboard.
+- Add more performance metrics, such as a confusion matrix and classification report.
+- Explore seasonal weather patterns.
 
 ## 👨‍💻 Author
+
 **Your Name**
 
-GitHub: [Your GitHub Profile](https://github.com/YOUR-USERNAME)
+GitHub: https://github.com/YOUR-USERNAME
 
-## ⭐ Support
-If you find this project useful, consider giving the repository a star on GitHub!
+## ⭐ Acknowledgment
 
----
-*This project was created for learning and practicing Python and Data Science concepts.*
+This project was developed for learning and practicing Python, Data Analysis, Data Visualization, and Machine Learning.
+
+If you find this project useful, please consider giving the repository a star!
